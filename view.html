@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Image Recognizer</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Detail Result</h1>
+    <h3>Created Date: {{task.date_created}}</h3>
+    <br>
+    <h3>URL: {{task.url}}</h3>
+    <br>
+    <h3>Classification Result: </h3>
+    <h3>{{task.content}}</h3>
+
+    <div class="form">
+        <form action="/">
+            <input type="submit" value="Go Back">
+        </form>
+    </div>
+</div>
+{% endblock %}
